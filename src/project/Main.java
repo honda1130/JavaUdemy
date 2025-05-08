@@ -39,20 +39,16 @@ public class Main {
 
 		//社員リストに追加
 		shainList.add(shain2);
-		
+
 		//社員リストから社員情報を取得してみる
 		System.out.println(shainList.get(0).getName());
 		System.out.println(shainList.get(1).getBornYear());
-		
 
-		//社員１を表示させる
-		System.out.println(shain1.getId() + ":" + shain1.getName() + ":" + shain1.getGender() + ":"
-				+ shain1.getBornYear() + ":" + shain1.getAddress());
-
-		//社員２を表示させる
-		System.out.println(shain2.getId() + ":" + shain2.getName() + ":" + shain2.getGender() + ":"
-				+ shain2.getBornYear() + ":" + shain2.getAddress());
-
+		//社員リストを表示させる
+		for (ShainBean shain : shainList) {
+			System.out.println(shain.getId() + ":" + shain.getName() + ":" + shain.getGender() + ":"
+					+ shain.getBornYear() + ":" + shain.getAddress());
+		}
 	}
 
 }
