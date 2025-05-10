@@ -44,7 +44,7 @@ public class Main {
 		System.out.println(shainList.get(0).getName());
 		System.out.println(shainList.get(1).getBornYear());
 
-		//社員リストを表示させる
+		//リストの中の社員を表示させる
 		for (ShainBean shain : shainList) {
 			System.out.println(shain.getId() + ":" + shain.getName() + ":" + shain.getGender() + ":"
 					+ shain.getBornYear() + ":" + shain.getAddress());
